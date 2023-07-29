@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 app.use(cors());
-const PORT = process.env.PORT || 8080; // Choose any available port you prefer
+const port = process.env.PORT || 8080; // Choose any available port you prefer
 const { DiscussServiceClient } = require("@google-ai/generativelanguage");
 const { GoogleAuth } = require("google-auth-library");
 const MODEL_NAME = "models/chat-bison-001";
